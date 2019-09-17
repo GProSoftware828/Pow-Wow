@@ -1,8 +1,21 @@
 import React from 'react';
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import Home from './Home';
+import Dashboard from './Dashboard';
 
 class App extends React.Component {
   render() {
-    return <div>Please register or Login</div>;
+    return (
+      <div className="app">
+        <h2>It's rendering!</h2>
+        <BrowserRouter>
+          <Switch>
+            <Route exact path={'/'} component={Home} />
+            <Route exact path={'/dashboard'} component={Dashboard} />
+          </Switch>
+        </BrowserRouter>
+      </div>
+    );
   }
 }
 

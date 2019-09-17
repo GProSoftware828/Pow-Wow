@@ -1,5 +1,5 @@
 {
-  "name": "reactChat",
+  "name": "reactchat",
   "private": true,
   "dependencies": {
     "@babel/preset-react": "^7.0.0",
@@ -9,7 +9,27 @@
     "react": "^16.9.0",
     "react-dom": "^16.9.0"
   },
+  "scripts": {
+    "start": "react-scripts start"
+  },
   "devDependencies": {
     "webpack-dev-server": "^3.8.0"
-  }
+  },
+  "description": "This README would normally document whatever steps are necessary to get the application up and running.",
+  "version": "1.0.0",
+  "main": "babel.config.js",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GProSoftware828/ReactLoginActionCableChat.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GProSoftware828/ReactLoginActionCableChat/issues"
+  },
+  "homepage": "https://github.com/GProSoftware828/ReactLoginActionCableChat#readme"
 }
