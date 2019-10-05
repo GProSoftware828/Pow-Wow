@@ -14,6 +14,7 @@ class App extends React.Component {
     };
 
     this.handleLogin = this.handleLogin.bind(this);
+    this.handleLogout = this.handleLogout.bind(this);
   }
 
   checkLoginStatus() {
@@ -47,6 +48,13 @@ class App extends React.Component {
     this.checkLoginStatus();
   }
 
+  handleLogout() {
+    this.setState({
+      loggedInStatus: 'NOT_LOGGED_IN',
+      user: {}
+    });
+  }
+
   handleLogin(data) {
     this.setState({
       loggedInStatus: 'LOGGED_IN',
@@ -67,6 +75,7 @@ class App extends React.Component {
                 <Home
                   {...props}
                   handleLogin={this.handleLogin}
+                  handleLogout={this.handleLogout}
                   loggedInStatus={this.state.loggedInStatus}
                 />
               )}

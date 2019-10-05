@@ -32,8 +32,8 @@ export default class Login extends Component {
       .then(response => {
         console.log('res from login', response);
         if (response.data.logged_in) {
-          //logged_in is made up, responds to form data, can make it up b/c in axios index.d.ts line 71 data is generic
-          //wrong credentials responds with status 200 in axios and status 401 in the data object
+          //COMMENT UPDATE: logged_in is from the Rails side sessions_controller- not in intellisense
+          //this is where React talks to Rails for the session cookie
           this.props.handleSuccessfulAuth(response.data);
         }
       })
