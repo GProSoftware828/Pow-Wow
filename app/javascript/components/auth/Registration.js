@@ -9,7 +9,7 @@ export default class Registration extends Component {
       email: '',
       password: '',
       password_confirmation: '',
-      registrationErrors: ''
+      registrationErrors: "User doesn't exist."
     };
 
     this.handleSubmit = this.handleSubmit.bind(this);
@@ -34,7 +34,9 @@ export default class Registration extends Component {
         { withCredentials: true } //gives permission, no error no function without
       )
       .then(response => {
-        console.log('registration res', response);
+        if (response.data.status === 'created') {
+          this.props.handleSuccessfulAuth(response.data);
+        }
       })
       .catch(error => {
         console.log('registration error', error);
