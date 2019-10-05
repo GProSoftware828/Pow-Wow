@@ -5,13 +5,28 @@ import Dashboard from './Dashboard';
 import Registration from './auth/Registration';
 
 class App extends React.Component {
+  constructor() {
+    super();
+
+    this.state = {
+      loggedInStatus: 'NOT_LOGGED_IN',
+      user: {}
+    };
+  }
+
   render() {
     return (
       <div className="app">
         <h2>It's rendering!</h2>
         <BrowserRouter>
           <Switch>
-            <Route exact path={'/'} component={Home} />
+            <Route
+              exact
+              path={'/'}
+              render={props => (
+                <Home {...props} loggedInStatus={this.state.loggedInStatus} />
+              )}
+            />
             <Route exact path={'/dashboard'} component={Dashboard} />
           </Switch>
         </BrowserRouter>
