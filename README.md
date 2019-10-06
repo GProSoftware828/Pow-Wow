@@ -27,6 +27,6 @@ To host a release locally (to predict the final product):
 
 
 Current builds:
-Release 2.0.0 Chat Room and React Authentication- chatroom working at localhost:2999/chatroom; React login and logout fully functional, Rails chatroom View page not yet added to React component in order to log users in for the chat room; props show logged in status or logged out status in component, redirects, remains same status during page refreshes.
+[Release 2.0.0](https://github.com/GProSoftware828/ReactLoginActionCableChat/releases) Chat Room and React Authentication- chatroom working at localhost:2999/chatroom; React login and logout fully functional, Rails chatroom View page not yet added to React component in order to log users in for the chat room; props show logged in status or logged out status in component, redirects, remains same status during page refreshes.
 
-Release 1.0.0 Working Before Authentication- Rails chatroom using action cable fully functional (now disconnected) and React frontend components added to Rails app that work; authentication not yet added.
+[Release 1.0.0](https://github.com/GProSoftware828/ReactLoginActionCableChat/releases) Working Before Authentication- Rails chatroom using action cable fully functional (now disconnected) and React frontend components added to Rails app that work; authentication not yet added.
