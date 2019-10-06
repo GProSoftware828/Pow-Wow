@@ -1,8 +1,8 @@
 # README
 
-###End product: an application for users to download and run from their own Heroku domain.
+### End product: an application for users to download and run from their own Heroku domain.
 
-##Private Group Chatroom For Free
+## Private Group Chatroom For Free
 
 Have you ever wanted to plan a secret event or hear others out on their non-shared environmental experiences in the work environment, or do you know there are people in your organization who's voices aren't being heard?
 
