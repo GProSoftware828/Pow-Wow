@@ -22,7 +22,7 @@ To host a release locally (to predict the final product):
 * **npm install** hit 'enter'
 * **rails s -p 2999** hit 'enter'
 5. go to your browser and type in the website address **localhost:2999** and make up users and check out the chatroom at localhost:2999/chatroom (vers. 2.0.0 or 1.0.0)
-* chat room was fully functional until pushing up to GitHub and pulling back down locally- it causes a disconnection in actioncable that is currently being investigated; but you can see the chatroom component without the message props working in the database.
+* chat room was fully functional until beginning integration process- it is now going through database changes, please be patient to view working chatroom.
 
 
 Current builds:
