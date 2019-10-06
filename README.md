@@ -20,9 +20,10 @@ To host a release locally (to predict the final product):
 *if new to Linux, this tutorial is comprehensive, but you only need to cd into the directory for step 4: [https://tutorials.ubuntu.com/tutorial/command-line-for-beginners#0](https://tutorials.ubuntu.com/tutorial/command-line-for-beginners#0)
 4. From the terminal in the project directory location, run the commands 
 * **npm install** hit 'enter'
+* **rails db:create** hit 'enter'
+* **rails db:migrate** hit 'enter'
 * **rails s -p 2999** hit 'enter'
 5. go to your browser and type in the website address **localhost:2999** and make up users and check out the chatroom at localhost:2999/chatroom (vers. 2.0.0 or 1.0.0)
-* chat room was fully functional until beginning integration process- it is now going through database changes, please be patient to view working chatroom.
 
 
 Current builds:
