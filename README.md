@@ -1,4 +1,5 @@
-# README
+<img src="https://i.ibb.co/yf7Js20/Pow-Wow-Empty-Tee-Pee.png" alt="Pow-Wow-Empty-Tee-Pee" border="0" align="center" />
+<h1 align="center">Pow Wow</h1>
 
 ### End product: an application for users to download and run from their own Heroku domain.
 
